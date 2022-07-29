@@ -1,0 +1,377 @@
+:root{
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: 'Times New Roman', Times, serif;
+}
+::-webkit-input-placeholder { /* Edge */
+    color: #B40606!important;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer */
+    color: #B40606!important;
+  }
+  
+  ::placeholder {
+    color: #B40606!important;
+  }
+ 
+body{
+    background-color:rgb(196, 242, 242)
+    /* background:linear-gradient(45deg,lime,lightblue,lightsalmon) */
+}
+/* a background color for every button  */
+.customButtn{
+    background-color: #B40606;
+    padding:10px 2px 10px 2px;
+    border-radius: .6rem;
+    font-family: 'Times New Roman', Times, serif;
+    color:#fff;
+    font-weight: 550;
+    border: 2px solid rgb(0, 0, 0);
+
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+nav li a {
+    font-size: 1.4rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000 !important;
+}
+
+nav li a:hover {
+    color: #b40606 !important;
+    ;
+}
+
+nav li a:hover::after {
+    display: flex;
+    content: "";
+    margin-top: .15rem;
+    outline: 2px solid #B40606;
+
+    /* transition: outline linear .75s; */
+
+
+}
+
+/* ---------------------------------------------------- */
+/* It's input element of navigation bar  */
+/* ---------------------------------------------------- */
+.nav_search {
+    width: 100%;
+    background-color: #eee;
+    padding: .25rem .75rem;
+    border-radius: .75rem;
+    border: none;
+    font-size: 1.4rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav_search:focus {
+    outline: none;
+    /* box-shadow: 0 0 .75rem lightskyblue; */
+    box-shadow: 0 0 .25rem .10rem #B40606;
+}
+
+/* ----------------------------------------------------
+---------------Our menu section -------------------
+---------------------------------------------------- */
+.card {
+    border-radius: 20px !important;
+    width: 100%;
+    box-shadow: 0 0 .15rem rgb(2, 2, 2);
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+
+}
+
+
+.card:hover {
+    /* background-color: rgba(0, 0, 0, .4); */
+    background-color: #B40606;
+    color: #fff;
+}
+
+.card .card-body img {
+    display: flex;
+
+}
+
+.menu_sec_img {
+max-width: 100%;
+    
+
+}
+
+.ourmenu_h2_title,.ymaBuy,.Sid {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5.2rem;
+}
+
+.ourmenu_h2 {
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+@media (max-width:575px) {
+    .ourmenu_h2_title {
+        font-size: 2.2rem;
+    }
+    .ymaBuy{
+        font-size: 2rem;
+    }
+
+    .ourmenu_h2 {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+    .Sid{
+        font-size: 2rem;
+    }
+}
+
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* single item  */
+/* single item  */
+/* single item  */
+/* single item  */
+
+
+.single_item_h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.size1 {
+    border: 1px solid #000;
+    border-radius: 30px;
+    padding: .25rem .75rem;
+    cursor: pointer;
+    background-color: #B40606;
+    color: #fff;
+
+}
+
+
+/* ymalt section   */
+/* ymalt section   */
+/* ymalt section   */
+/* ymalt section   */
+/* ymalt section   */
+/* ymalt section   */
+/* ymalt section   */
+/* ymalt section   */
+/* ymalt section   */
+
+.ymatschild {
+    position: absolute;
+    z-index: 10000 !important;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 40px;
+    /* padding: 10px; */
+
+}
+
+.ymatschild h2 {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    padding: 0 .25rem;
+    color: #fff;
+}
+
+.parent{
+    position: relative;
+    margin: 2rem 0 2rem 0;
+}
+.parent img{
+    max-width: 100%;
+    border-radius: 2.1rem;
+}
+
+.child{
+    position: absolute;
+    /* background-color: rgba(180, 6, 6,.2); */
+    background-color: rgba(0, 0, 0,.4);
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    border-radius: 2.1rem;
+    cursor: pointer;
+    /* transition: all .3s linear; */
+}
+.child:hover{
+    background-color: rgba(0, 0, 0,.1);
+    /* background-color: #fff; */
+    color:#000;
+}
+
+.umatH2{
+    position: absolute;
+    margin:50% auto 0 auto;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    text-transform: capitalize;
+    
+}
+
+.second_child {
+    justify-content: center!important;
+    /* background-color: green; */
+    position: absolute;
+    
+    top:102%;
+    left:0;
+    width: 100%;
+}
+
+.third_child {
+    display: flex;
+    justify-content: space-between!important;
+    /* background-color: green; */
+    position: absolute;
+    font-size: 1.3rem;
+    font-weight: 600;
+    top:110%;
+    left:0;
+    width: 100%;
+}
+
+.fourth_child {
+    display: flex;
+    justify-content: center!important;
+    /* background-color: green; */
+    position: absolute;
+    font-size: .9rem;
+    font-weight: 600;
+    top:119%;
+    left:0;
+    width: 100%;
+}
+.fourth_child .btn{
+    background-color: #B40606!important;
+    padding:.45rem .75rem;
+    border-radius: 1rem;
+    color:#fff;
+}
+
+/* .ymaBuy media Q */
+/* .ymaBuy media Q */
+/* .ymaBuy media Q */
+
+@media (max-width:575px) {
+    .second_child h3{
+        font-size: 1rem;
+        margin: .25rem 0;
+    }
+    .third_child span{
+        margin: .45rem 0;
+    }
+    .third_child{
+        font-size: .9rem;
+    }
+    .fourth_child .btn{
+        font-size: 1rem;
+        margin: .95rem 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----User Login and singn up button ----------- */
+/* -----User Login and singn up button ----------- */
+/* -----User Login and singn up button ----------- */
+/* -----User Login and singn up button ----------- */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+    /* border-radius:10px; */
+
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    font-family: 'Times New Roman', Times, serif;
+    color:#fff;
+    /* background-color: rgba(0,0,0,1); */
+    background-color: #eee;;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 2px solid #B40606;
+    border-radius: 2rem;
+    width: 30%; /* Could be more or less, depending on screen size */
+  }
+
+  .modal-content input:focus{
+    box-shadow: 0 0 3px 2px #B40606!important;
+  }
+  @media (max-width:575px) {
+    .modal-content{
+        width: 95%;
+    }
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color:#B40606;
+    text-decoration: none;
+    cursor: pointer;
+  }

@@ -1,0 +1,170 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'bootstrap/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- first thing first navbar -->
+    <!-- first thing first navbar -->
+
+    <nav class="d-none d-md-block">
+        <div class="container mt-2">
+            <div class="row align-items-center">
+                <div class="col-6">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-4">
+                            <a href="#home_page" data-toggle="tooltip" data-placement="top" title="Go to home page"><img
+                                    src="./static/img/logo.png" alt="icon to be"></a>
+                        </div>
+                        <div class="col-8 d-flex">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#ymaBuy">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">My order</a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="row align-items-center justify-content-end">
+                        <div class="col-5">
+                            <form action="">
+                                <input type="text" class="nav_search" placeholder="Current location" id="navbar_search">
+                            </form>
+                        </div>
+                        <div class="col-5 d-flex justify-content-around align-items-center">
+                            <a href="#search"> <img src="./static/img/search.png" class="img-fluid" alt="img one"></a>
+                            <a href="#user"><img src="./static/img/user.png" class="img-fluid" alt="img two"
+                                    id="myBtn"></a>
+                            <a href="#bag"><img src="./static/img/bag.png" class="img-fluid" alt="img three"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- off-compaus menu -->
+    <!-- off-compaus menu -->
+    <!-- off-compaus menu -->
+    <!-- off-compaus menu -->
+
+
+    <div class="d-block d-md-none mt-md-0 mt-1">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-2">
+                <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample">
+                    <div class="d-flex align-items-center">
+                        <span class="fw-bold m-3" style="font-size: 1.5rem;color:#000;">||||</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-7">
+
+                <input type="text" class="nav_search" placeholder="Current location" id="navbar_search">
+                </form>
+            </div>
+
+            <div class="col-2 d-flex justify-content-around align-items-center">
+
+                <a href="#bag"><img src="./static/img/bag.png" class="img-fluid" alt="img three"></a>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- <div class="d-block d-md-none">
+   
+     <a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" >
+       <img src="./static/img/homepage/insta.png" alt="">
+     </a>
+    </div> -->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text,
+                images, lists, etc.
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% block content %}
+
+    {% endblock%}
+
+
+    <!-- Footer Startsssssssss -->
+    <!-- Footer Startsssssssss -->
+    <!-- Footer Startsssssssss -->
+    <!-- Footer Startsssssssss -->
+    <div class="container mt-5 mb-5 py-3 px-3 "
+        style="background-color: #000;font-family: 'Times New Roman', Times, serif;border-radius: 1rem;">
+        <div class="row">
+            <div class="col-auto mx-auto">
+                <div class="lead  px-2 py-1" style="background-color:#B40606;color:#fff;border-radius:1rem;">
+                    copyright@2022
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-auto">
+                <a href="">
+                    <p class="display-7">About us</p>
+                </a>
+            </div>
+            <div class="col-auto">
+                <p><a href="#" class="display-7">Terms and condition</a></p>
+            </div>
+            <div class="col-auto">
+                <p><a href="#" class="display-7">Privacy Policy</a></p>
+            </div>
+            <div class="col-auto">
+                <p><a href="#" class="display-7">Return Policy</a></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 mx-auto">
+                <img src="{% static 'img/payment-method.png' %}"  class="img-fluid" alt="">
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+<script src="{% static 'bootstrap/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/logic.js' %}"></script>
+
+</html>
